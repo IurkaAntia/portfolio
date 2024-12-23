@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function ContentCard({ customStyle, imageUrl, title, text }) {
   return (
     <div className="shadow-inner rounded-2xl shadow-gray-400">
@@ -15,5 +17,12 @@ function ContentCard({ customStyle, imageUrl, title, text }) {
     </div>
   );
 }
+
+ContentCard.propTypes = {
+  customStyle: PropTypes.object,
+  imageUrl: PropTypes.string,
+  title: PropTypes.string,
+  text: PropTypes.string,
+};
 
 export default ContentCard;
